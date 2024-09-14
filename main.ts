@@ -4,11 +4,11 @@ input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     btf.sendData(btf.btf_sendBuffer19())
     sender.send20Strecken(
     btf.btf_sendBuffer19(),
-    sender.sender_StreckePicker(50, 180, 30),
-    sender.sender_StreckePicker(-50, 180, 30),
-    sender.sender_StreckePicker(100, 90, 20),
-    sender.sender_StreckePicker(50, 0, 115),
-    sender.sender_StreckePicker(-100, 90, 20),
+    sender.sender_StreckePicker(50, 180, 30, false),
+    sender.sender_StreckePicker(-50, 180, 30, false),
+    sender.sender_StreckePicker(100, 90, 20, false),
+    sender.sender_StreckePicker(50, 0, 115, false),
+    sender.sender_StreckePicker(-100, 90, 20, false),
     1
     )
     btf.setAbstand(btf.btf_sendBuffer19(), btf.e3Abstand.u0)
