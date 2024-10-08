@@ -1,11 +1,11 @@
 {
-    "name": "fahrplan-s61",
+    "name": "fahrplan-s63",
     "version": "0.0.1",
     "description": "",
     "dependencies": {
         "core": "*",
-        "v1": "*",
-        "fernsteuerung": "github:calliope-net/fernsteuerung#v1.6.7"
+        "fernsteuerung": "github:calliope-net/fernsteuerung#v1.6.49",
+        "v1": "*"
     },
     "files": [
         "main.blocks",
@@ -16,7 +16,7 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "6.0.41",
+        "target": "6.0.42",
         "targetId": "calliopemini"
     },
     "supportedTargets": [
