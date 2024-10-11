@@ -51,6 +51,8 @@ input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     btf.e3Abstand.u1
     )
     btf.sendData(btf.btf_sendBuffer19())
+    btf.zeige5x5Buffer(btf.btf_sendBuffer19())
+    btf.zeige5x5Joystick(btf.btf_sendBuffer19())
 })
 input.onButtonEvent(Button.B, btf.buttonEventValue(ButtonEvent.Hold), function () {
     btf.buttonBhold()
