@@ -1,18 +1,17 @@
 input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     btf.fill_sendBuffer19()
-    btf.setBetriebsart(btf.btf_sendBuffer19(), btf.e0Betriebsart.p2Fahrplan)
     btf.sendData(btf.btf_sendBuffer19())
     sender.send2Strecken(
     btf.btf_sendBuffer19(),
-    sender.sender_1MotorPicker(50, 90, 50),
+    sender.sender_1MotorPicker(100, 90, 200),
     null,
-    null,
+    sender.sender_1MotorPicker(-50, 90, 50),
     null,
     null,
     1,
     true,
     true,
-    btf.e3Abstand.u1
+    btf.e3Abstand.u0
     )
     btf.sendData(btf.btf_sendBuffer19())
     btf.zeige5x5Buffer(btf.btf_sendBuffer19())
@@ -38,7 +37,6 @@ input.onButtonEvent(Button.AB, input.buttonEventClick(), function () {
 })
 input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     btf.fill_sendBuffer19()
-    btf.setBetriebsart(btf.btf_sendBuffer19(), btf.e0Betriebsart.p2Fahrplan)
     btf.sendData(btf.btf_sendBuffer19())
     sender.send2Strecken(
     btf.btf_sendBuffer19(),
