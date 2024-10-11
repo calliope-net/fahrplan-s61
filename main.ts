@@ -26,7 +26,10 @@ input.onButtonEvent(Button.AB, input.buttonEventClick(), function () {
     btf.btf_sendBuffer19(),
     sender.sender_2MotorenPicker(80, 80, 25),
     sender.sender_2Motoren(btf.speedPicker(25), btf.speedPicker(-25), 198, 198, true, 1),
-    4
+    4,
+    true,
+    true,
+    btf.e3Abstand.u1
     )
     btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.ma, true)
     btf.sendData(btf.btf_sendBuffer19())
