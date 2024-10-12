@@ -64,7 +64,7 @@ input.onButtonEvent(Button.B, btf.buttonEventValue(ButtonEvent.Hold), function (
     sender.sender_1MotorPicker(25, 175, 20),
     sender.sender_1MotorPicker(-25, 175, 20),
     sender.sender_1MotorPicker(50, 90, 20),
-    sender.sender_1MotorPicker(30, 10, 75),
+    sender.sender_1MotorPicker(30, 18, 160),
     sender.sender_1MotorPicker(-50, 90, 20),
     1,
     true,
