@@ -5,8 +5,8 @@ input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     sender.send2Strecken(
     btf.btf_sendBuffer19(),
     sender.sender_1MotorPicker(100, 90, 100),
-    null,
     sender.sender_1MotorPicker(-40, 90, 100),
+    null,
     null,
     null,
     1,
