@@ -56,7 +56,24 @@ input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     btf.zeige5x5Joystick(btf.btf_sendBuffer19())
 })
 input.onButtonEvent(Button.B, btf.buttonEventValue(ButtonEvent.Hold), function () {
-	
+    btf.fill_sendBuffer19()
+    btf.sendData(btf.btf_sendBuffer19())
+    btf.comment(btf.btf_text("MKC 5 Strecken mit Kreis"))
+    sender.send2Strecken(
+    btf.btf_sendBuffer19(),
+    sender.sender_1MotorPicker(25, 175, 20),
+    sender.sender_1MotorPicker(-25, 175, 20),
+    sender.sender_1MotorPicker(50, 90, 20),
+    sender.sender_1MotorPicker(30, 10, 75),
+    sender.sender_1MotorPicker(-50, 90, 20),
+    1,
+    true,
+    true,
+    btf.e3Abstand.u1
+    )
+    btf.sendData(btf.btf_sendBuffer19())
+    btf.zeige5x5Buffer(btf.btf_sendBuffer19())
+    btf.zeige5x5Joystick(btf.btf_sendBuffer19())
 })
 input.onButtonEvent(Button.A, btf.buttonEventValue(ButtonEvent.Hold), function () {
 	
