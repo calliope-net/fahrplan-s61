@@ -38,11 +38,11 @@ input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     btf.sendData(btf.btf_sendBuffer19())
     sender.send2Strecken(
     btf.btf_sendBuffer19(),
-    sender.sender_1MotorPicker(-50, 90, 50),
-    null,
-    null,
-    null,
-    null,
+    sender.sender_1MotorPicker(60, 90, 30),
+    sender.sender_1MotorPicker(-50, 180, 20),
+    sender.sender_1MotorPicker(-50, 0, 20),
+    sender.sender_1MotorPicker(-60, 90, 20),
+    sender.sender_1MotorPicker(60, 90, 30),
     1,
     true,
     true,
@@ -58,4 +58,4 @@ input.onButtonEvent(Button.B, btf.buttonEventValue(ButtonEvent.Hold), function (
 input.onButtonEvent(Button.A, btf.buttonEventValue(ButtonEvent.Hold), function () {
 	
 })
-sender.beimStart(true, btf.eFunkgruppe.b1)
+sender.beimStart(true, btf.eFunkgruppe.b2)
