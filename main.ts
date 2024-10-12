@@ -38,7 +38,7 @@ input.onButtonEvent(Button.AB, input.buttonEventClick(), function () {
 input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     btf.fill_sendBuffer19()
     btf.sendData(btf.btf_sendBuffer19())
-    btf.comment(btf.btf_text("rückwärts einparken"))
+    btf.comment(btf.btf_text("rückwärts einparken OK"))
     sender.send2Strecken(
     btf.btf_sendBuffer19(),
     sender.sender_1MotorPicker(60, 90, 30),
@@ -49,7 +49,7 @@ input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     1,
     true,
     true,
-    btf.e3Abstand.u0
+    btf.e3Abstand.u1
     )
     btf.sendData(btf.btf_sendBuffer19())
     btf.zeige5x5Buffer(btf.btf_sendBuffer19())
