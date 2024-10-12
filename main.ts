@@ -1,7 +1,7 @@
 input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     btf.fill_sendBuffer19()
     btf.sendData(btf.btf_sendBuffer19())
-    btf.comment(btf.btf_text("vor und zurück OK"))
+    btf.comment(btf.btf_text("nur 2 Strecken vor und zurück"))
     sender.send2Strecken(
     btf.btf_sendBuffer19(),
     sender.sender_1MotorPicker(100, 90, 100),
@@ -21,7 +21,7 @@ input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
 input.onButtonEvent(Button.AB, input.buttonEventClick(), function () {
     btf.fill_sendBuffer19()
     btf.sendData(btf.btf_sendBuffer19())
-    btf.comment(btf.btf_text("2 Motoren: Callibot Quadrat fahren, 198 Impulse = viertel Drehung OK"))
+    btf.comment(btf.btf_text("2 Motoren: Callibot Quadrat fahren, Encoder 198 Impulse = viertel Drehung"))
     sender.send2x2Motoren(
     btf.btf_sendBuffer19(),
     sender.sender_2MotorenPicker(80, 80, 30),
@@ -38,7 +38,7 @@ input.onButtonEvent(Button.AB, input.buttonEventClick(), function () {
 input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     btf.fill_sendBuffer19()
     btf.sendData(btf.btf_sendBuffer19())
-    btf.comment(btf.btf_text("rückwärts einparken OK"))
+    btf.comment(btf.btf_text("rückwärts einparken"))
     sender.send2Strecken(
     btf.btf_sendBuffer19(),
     sender.sender_1MotorPicker(60, 90, 30),
@@ -58,7 +58,7 @@ input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
 input.onButtonEvent(Button.B, btf.buttonEventValue(ButtonEvent.Hold), function () {
     btf.fill_sendBuffer19()
     btf.sendData(btf.btf_sendBuffer19())
-    btf.comment(btf.btf_text("MKC 5 Strecken mit Kreis OK"))
+    btf.comment(btf.btf_text("MKC 5 Strecken mit Kreis"))
     sender.send2Strecken(
     btf.btf_sendBuffer19(),
     sender.sender_1MotorPicker(25, 175, 20),
@@ -78,7 +78,7 @@ input.onButtonEvent(Button.B, btf.buttonEventValue(ButtonEvent.Hold), function (
 input.onButtonEvent(Button.A, btf.buttonEventValue(ButtonEvent.Hold), function () {
     btf.fill_sendBuffer19()
     btf.sendData(btf.btf_sendBuffer19())
-    btf.comment(btf.btf_text("Callibot 5 Strecken mit Kreis OK"))
+    btf.comment(btf.btf_text("Callibot 5 Strecken mit Kreis"))
     sender.send2Strecken(
     btf.btf_sendBuffer19(),
     sender.sender_1MotorPicker(50, 180, 40),
@@ -88,7 +88,7 @@ input.onButtonEvent(Button.A, btf.buttonEventValue(ButtonEvent.Hold), function (
     sender.sender_1MotorPicker(-100, 90, 20),
     1,
     true,
-    false,
+    true,
     btf.e3Abstand.u1
     )
     btf.sendData(btf.btf_sendBuffer19())
