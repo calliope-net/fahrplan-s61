@@ -1,12 +1,12 @@
 input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     btf.fill_sendBuffer19()
     btf.sendData(btf.btf_sendBuffer19())
-    btf.comment(btf.btf_text("vor und zurück"))
+    btf.comment(btf.btf_text("vor und zurück OK"))
     sender.send2Strecken(
     btf.btf_sendBuffer19(),
     sender.sender_1MotorPicker(100, 90, 100),
     null,
-    sender.sender_1MotorPicker(-50, 90, 100),
+    sender.sender_1MotorPicker(-40, 90, 100),
     null,
     null,
     1,
@@ -21,7 +21,7 @@ input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
 input.onButtonEvent(Button.AB, input.buttonEventClick(), function () {
     btf.fill_sendBuffer19()
     btf.sendData(btf.btf_sendBuffer19())
-    btf.comment(btf.btf_text("2 Motoren: Callibot Quadrat fahren, 198 Impulse = viertel Drehung"))
+    btf.comment(btf.btf_text("2 Motoren: Callibot Quadrat fahren, 198 Impulse = viertel Drehung OK"))
     sender.send2x2Motoren(
     btf.btf_sendBuffer19(),
     sender.sender_2MotorenPicker(80, 80, 30),
