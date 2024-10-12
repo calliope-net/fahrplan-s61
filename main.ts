@@ -58,13 +58,13 @@ input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
 input.onButtonEvent(Button.B, btf.buttonEventValue(ButtonEvent.Hold), function () {
     btf.fill_sendBuffer19()
     btf.sendData(btf.btf_sendBuffer19())
-    btf.comment(btf.btf_text("MKC 5 Strecken mit Kreis"))
+    btf.comment(btf.btf_text("MKC 5 Strecken mit Kreis OK"))
     sender.send2Strecken(
     btf.btf_sendBuffer19(),
     sender.sender_1MotorPicker(25, 175, 20),
     sender.sender_1MotorPicker(-25, 175, 20),
     sender.sender_1MotorPicker(50, 90, 20),
-    sender.sender_1MotorPicker(30, 18, 160),
+    sender.sender_1MotorPicker(30, 15, 160),
     sender.sender_1MotorPicker(-50, 90, 20),
     1,
     true,
@@ -76,7 +76,24 @@ input.onButtonEvent(Button.B, btf.buttonEventValue(ButtonEvent.Hold), function (
     btf.zeige5x5Joystick(btf.btf_sendBuffer19())
 })
 input.onButtonEvent(Button.A, btf.buttonEventValue(ButtonEvent.Hold), function () {
-	
+    btf.fill_sendBuffer19()
+    btf.sendData(btf.btf_sendBuffer19())
+    btf.comment(btf.btf_text("Callibot 5 Strecken mit Kreis OK"))
+    sender.send2Strecken(
+    btf.btf_sendBuffer19(),
+    sender.sender_1MotorPicker(50, 180, 40),
+    sender.sender_1MotorPicker(-50, 180, 40),
+    sender.sender_1MotorPicker(100, 90, 20),
+    sender.sender_1MotorPicker(50, 0, 95),
+    sender.sender_1MotorPicker(-100, 90, 20),
+    1,
+    true,
+    false,
+    btf.e3Abstand.u1
+    )
+    btf.sendData(btf.btf_sendBuffer19())
+    btf.zeige5x5Buffer(btf.btf_sendBuffer19())
+    btf.zeige5x5Joystick(btf.btf_sendBuffer19())
 })
 sender.beimStart(false, btf.eFunkgruppe.b2)
 btf.zeigeFunkgruppe()
