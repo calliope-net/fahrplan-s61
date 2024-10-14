@@ -95,5 +95,4 @@ input.onButtonEvent(Button.A, btf.buttonEventValue(ButtonEvent.Hold), function (
     btf.zeige5x5Buffer(btf.btf_sendBuffer19())
     btf.zeige5x5Joystick(btf.btf_sendBuffer19())
 })
-sender.beimStart(false, btf.eFunkgruppe.b2)
-btf.zeigeFunkgruppe()
+sender.beimStart(false, btf.eFunkgruppe.b4)
