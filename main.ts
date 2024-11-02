@@ -1,7 +1,6 @@
 input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     btf.fill_sendBuffer19()
     btf.sendData(btf.btf_sendBuffer19())
-    btf.comment(btf.btf_text("nur 2 Strecken vor und zurück"))
     sender.send2Strecken(
     btf.btf_sendBuffer19(),
     sender.sender_1MotorPicker(100, 90, 100),
@@ -17,6 +16,7 @@ input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     btf.sendData(btf.btf_sendBuffer19())
     btf.zeige5x5Buffer(btf.btf_sendBuffer19())
     btf.zeige5x5Joystick(btf.btf_sendBuffer19())
+    btf.comment(btf.btf_text("nur 2 Strecken vor und zurück"))
 })
 input.onButtonEvent(Button.AB, input.buttonEventClick(), function () {
     btf.fill_sendBuffer19()
@@ -95,4 +95,4 @@ input.onButtonEvent(Button.A, btf.buttonEventValue(ButtonEvent.Hold), function (
     btf.zeige5x5Buffer(btf.btf_sendBuffer19())
     btf.zeige5x5Joystick(btf.btf_sendBuffer19())
 })
-sender.beimStart(false, btf.eFunkgruppe.b1)
+sender.beimStart(false, btf.eFunkgruppe.b4)
